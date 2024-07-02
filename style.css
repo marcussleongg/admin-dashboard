@@ -68,6 +68,11 @@ body {
 
 .profile {
     align-self: center;
+    font-weight: bold;
+}
+
+.welcome {
+    font-weight: bold;
 }
 
 .main-content {
@@ -113,6 +118,16 @@ body {
 .announcements {
     grid-area: 1 / 2 / 2 / 3;
     background-color: white;
+    display: grid;
+    position: relative;
+}
+
+.announcements::before {
+    content: "Announcements";
+    position: absolute;
+    top: -1.5em;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 .trending {
