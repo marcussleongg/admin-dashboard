@@ -18,17 +18,25 @@ body {
 .logo {
     font-size: 50px;
     font-weight: bold;
+    position: fixed;
+    top: 0;
 }
 
 .navigation {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: fixed;
+    top: 15%;
 }
 
 .help {
-    padding-top: 40px;
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1em;
+    position: sticky;
+    top: 60%;
 }
 
 .header {
@@ -38,16 +46,41 @@ body {
     background-color: white;
 }
 
+.searchbar {
+    align-self: center;
+    justify-self: end;
+    width: 85%;
+}
+
+.searchbar label {
+    position: relative;
+    top: 25px;
+    left: -40px;
+}
+
+.search {
+    background-color: rgb(215, 230, 230);
+    border-radius: 25px;
+    height: 30px;
+    width: 100%;
+    border: none;
+}
+
+.profile {
+    align-self: center;
+}
+
 .main-content {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid: 1fr 1fr / 2fr 1fr;
+    grid: 1fr 1fr / 3fr 1fr;
     padding: 50px 25px;
     row-gap: 50px;
     column-gap: 25px;
 }
 
 .actions {
+    grid-area: 2 / 2 / 3 / 4;
     display: flex;
     gap: 1em;
 }
@@ -72,17 +105,22 @@ body {
 }
 
 .projects > * {
-    height: 150px;
+    height: 200px;
     background-color: yellow;
     border-radius: 10px;
 }
 
 .announcements {
     grid-area: 1 / 2 / 2 / 3;
-    background-color: black;
+    background-color: white;
 }
 
 .trending {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: black;
+    background-color: white;
+}
+
+.navigation a, .help a {
+    color: white;
+    text-decoration: none;
 }
