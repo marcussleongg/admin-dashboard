@@ -53,32 +53,47 @@ body {
 }
 
 .searchbar {
+    grid-area: 1 / 1 / 2 / 2;
     align-self: center;
-    justify-self: end;
-    width: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
-.searchbar label img {
+.searchbar img{
     position: relative;
-    top: 32px;
-    left: -40px;
-    max-width: 4%;
+    max-width: 1em;
+    right: 1em;
 }
 
 .search {
     background-color: rgb(215, 230, 230);
     border-radius: 25px;
     height: 30px;
-    width: 100%;
+    width: 85%;
     border: none;
 }
 
+.notifications {
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: center;
+    justify-self: end;
+}
+
+.notifications img {
+    width: 15%;
+    position: relative;
+    left: 3em;
+}
+
 .profile {
+    grid-area: 1 / 3 / 2 / 4;
     align-self: center;
     font-weight: bold;
 }
 
 .welcome {
+    grid-area: 2 / 1 / 3 / 2;
     font-weight: bold;
 }
 
