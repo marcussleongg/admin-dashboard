@@ -128,13 +128,14 @@ body {
 }
 
 .projects div h3 {
-    padding: 0;
+    padding: 2rem 2rem 0 2rem;
     margin: 0;
     grid-area: 1 / 1 / 2 / 5;
+    align-self: end;
 }
 
 .projects div p {
-    padding: 0;
+    padding: 0 2rem 0 2rem;
     margin: 0;
     grid-area: 2 / 1 / 3 / 5;
 }
