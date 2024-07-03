@@ -237,6 +237,7 @@ body {
     -webkit-line-clamp: 3;
            -line-clamp: 3;
     -webkit-box-orient: vertical;
+    color: rgba(61, 66, 66, 0.753);
 }
 
 .trending {
@@ -256,4 +257,29 @@ body {
 .navigation a, .help a {
     color: white;
     text-decoration: none;
+}
+
+.trending {
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr / 1fr;
+}
+
+.trending div {
+    display: grid;
+    grid: 1fr 1fr / 1fr 3fr;
+    padding: 1em;
+}
+
+.trending div img {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 80%;
+}
+
+.trending div p {
+    padding: 0;
+    margin: 0;
+}
+
+.trending div .title {
+    color: rgba(61, 66, 66, 0.753);
 }
